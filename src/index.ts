@@ -8,12 +8,14 @@ app.use(cors({
     methods:["POST","GET","DELETE"],
     credentials:true
 }));
+
 import adminRouter from "./routes/admin"
 import administratorRouter from "./routes/administrator"
 import issueRouter from "./db/issue"
 const axios = require('axios');
 // Middleware for parsing request bodies
 app.use(bodyParser.json());
+
 
 app.use("/admin", adminRouter)
 app.use("/administrator", administratorRouter)
