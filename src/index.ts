@@ -30,7 +30,7 @@ async function createAdministrator(id:number,email:string,password:string,phonen
     console.log(res);
 }
 
-const PORT = 4000;
+const PORT = 8080;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
